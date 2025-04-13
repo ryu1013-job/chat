@@ -29,6 +29,7 @@
     "class-variance-authority": "^0.7.0",
     "drizzle-orm": "^0.31.2",
     "drizzle-zod": "^0.5.1",
+    "justd-icons": "^1.10.27",
     "lucide-react": "^0.396.0",
     "nanoid": "^5.0.7",
     "next": "15.3.0",
