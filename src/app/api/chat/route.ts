@@ -1,7 +1,6 @@
 import { openai } from '@ai-sdk/openai'
 import { smoothStream, streamText, tool } from 'ai'
 import { z } from 'zod'
-import { createResource } from '~/lib/actions/resources'
 import { findRelevantContent } from '~/lib/ai/embedding'
 
 // Allow streaming responses up to 30 seconds
@@ -50,10 +49,9 @@ A: I love chocolate.
           question: z.string().describe('the users question'),
         }),
         execute: async ({ question }) => {
-          console.log('Finding relevant content for:', question)
-          // return await findRelevantContent(question)
+          // console.log('Finding relevant content for:', question)
           const result = await findRelevantContent(question)
-          console.log('Found relevant content:', result)
+          // console.log('Found relevant content:', result)
           return result
         },
 

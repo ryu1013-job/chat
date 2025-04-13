@@ -1,3 +1,5 @@
+/* eslint-disable node/prefer-global/process */
+/* eslint-disable no-console */
 import { drizzle } from 'drizzle-orm/postgres-js'
 
 import { migrate } from 'drizzle-orm/postgres-js/migrator'
